@@ -1,0 +1,89 @@
+body { 
+  margin: 0;
+  background: #000000; 
+}
+figure {
+  position: relative;
+  width: 70vw;
+  height: 40vw;
+  margin: 100 auto;
+  overflow: hidden;
+  background-image: url(https://i.imgur.com/nhcrVE1.jpg);
+  background-size:contain;
+}
+
+figure img {
+  position: absolute; 
+  width: 100%;
+  -webkit-transition: 2s ease-in-out;
+          transition: 2s ease-in-out;
+}
+
+
+
+figure img:nth-of-type(1) {
+  clip-path: polygon(38.5% 22.5%,50% 22.5%,50% 97.5%,38.5% 97.5%);
+  -webkit-clip-path: polygon(38.5% 22.5%,50% 22.5%,50% 97.5%,38.5% 97.5%);
+}
+figure img:nth-of-type(3) {
+  clip-path: polygon(26.5% 22%,38.5% 22.5%,38.5% 97.5%,26.5% 97.5%);
+  -webkit-clip-path: polygon(26.5% 22%,38.5% 22.5%,38.5% 97.5%,26.5% 97.5%);
+}
+figure img:nth-of-type(5) {
+  clip-path: polygon(11.5% 22%,26.5% 22%,26.5% 97.5%,11.5% 97.5%);
+  -webkit-clip-path: polygon(11.5% 22%,26.5% 22%,26.5% 97.5%,11.5% 97.5%);
+}         
+figure img:nth-of-type(2) {
+  clip-path: polygon(50% 22.5%,61.5% 22%,61.5% 97.5%,50% 97.5%);
+  -webkit-clip-path: polygon(50% 22.5%,61.5% 22%,61.5% 97.5%,50% 97.5%);
+}
+figure img:nth-of-type(4) {
+  clip-path: polygon(61.5% 22%,73.5% 21.5%,73.5% 97.5%,61.5% 97.5%);
+  -webkit-clip-path: polygon(61.5% 22%,73.5% 21.5%,73.5% 97.5%,61.5% 97.5%);
+}
+figure img:nth-of-type(6) {
+  clip-path: polygon(73.5% 21.5%,88.5% 21%,88.5% 97.5%,73.5% 97.5%);
+  -webkit-clip-path: polygon(73.5% 21.5%,88.5% 21%,88.5% 97.5%,73.5% 97.5%);
+}
+
+figure:hover img:nth-of-type(1) {
+  -webkit-transform: translateX(-20%);
+      -ms-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+figure:hover img:nth-of-type(3) {
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+/*figure:hover img:nth-of-type(5) {
+  -webkit-transform: translateX(-11%);
+      -ms-transform: translateX(-11%);
+          transform: translateX(-11%);
+}*/
+figure:hover img:nth-of-type(2) {
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%);
+}
+figure:hover img:nth-of-type(4) {
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
+}
+/*figure:hover img:nth-of-type(6) {
+  -webkit-transform: translateX(14%);
+      -ms-transform: translateX(14%);
+          transform: translateX(14%);
+}*/ 
+figcaption {
+  font-family:sans-serif;
+  padding-top: 15vw;
+  font-size: 6.5vw;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
